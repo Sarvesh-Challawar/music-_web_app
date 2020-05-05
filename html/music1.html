@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/55bb4c0c63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="icon" href="../Assets/Images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/music1.css">
+</head>
+<body>
+  <!-- ------------------------------------------Navigation bar---------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navi">
+
+        <a class="navbar-brand text-white" href="#"><span id="music-icon"><i class="fas fa-compact-disc"></i></span> Music Player</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Music
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Favourites</a>
+                <a class="dropdown-item" href="#">Playlist</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>          <!-----  Something has to be added here ------>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Support</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <div class="form-control mr-sm-2">
+               <input id="search-input" type="search" placeholder="Search">
+               <a href="#" id="microphone"><i class="fas fa-microphone-alt"></i></a>
+              </div>
+            <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
+          </form>
+
+          <a class="navbar-brand" href="#"><img src="../Assets/Images/me.jpg" id="user"></a>
+        </div>
+    </nav>
+
+    <!-- ----------------------------------------Main container------------------------------------- -->
+    <div class="container-fluid" id="main-container">
+        <div class="row" id="center-row">
+          <div class="col-xl-8  col-lg-12 col-md-12 col-sm-12 col-12 d-flex justify-content-between">
+            <div class="container-fluid" id="container">
+
+              <!-- --------------------------------Latest Playlist----------------------------------- -->
+              <div class="row" id="latest-playlist-row">
+                <!-- Filled inside the songs.js File -->
+              </div>
+
+              <!-- -------------------------------Latest Release--------------------------------------- -->
+              <div class="row d-flex justify-content-between" id="center-row">
+                <h3 id="row-header">Latest Release</h3>
+                <a id="more" href="#"><h3>MORE</h3></a>
+              </div>
+
+              <div class="row" id="latest-release-row">
+                <!-- Filled inside the songs.js File -->
+              </div>
+
+              <!-- -----------------------------Popular Artists---------------------------------------- -->
+              <div class="row d-flex justify-content-between" id="center-row">
+                <h3 id="row-header">Popular Artists</h3>
+                <a id="more" href="#"><h3>MORE</h3></a>
+              </div>
+
+              <div class="row" id="artist-row">
+                 <!-- Filled inside the songs.js File -->
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ------------------------------------Aside Section --------------------------------------- -->
+
+          <div class="songs2 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div id="sidebar2">
+                <aside class="aside">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="d-inline-block white">Queue</h3>
+                    <span>
+                      <button class="btn btn-success playall more">MORE</button>
+                    </span>
+                  </div>
+
+                  <div id="featuresongs">
+                    <div class="container-fluid" id="feature-song-container">
+                         <!-- Filled inside the songs.js File -->
+                    </div>
+                  </div>
+
+                </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testing lines, not relevant to the code -->
+
+    <!-- <h2>Sound Information</h2>
+    <div id="length">Duration:</div>
+    <div id="source">Source:</div>
+    <div id="status" style="color:red;">Status: Loading</div>
+    <hr>
+    <h2>Control Buttons</h2>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="restart">Restart</button>
+    <hr>
+    <h2>Playing Information</h2>
+    <div id="currentTime">0</div>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2> -->
+
+      <!-- ---------------------Bottom-Nav-bar------------------------------------------------------------- -->
+
+      <nav class="navbar fixed-bottom bottom shadow-lg p-3 m-2 bg-dark rounded-pill">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-start" id="navbar-row">
+            <div class="col-3 d-flex justify-content-start">
+              <img src="../Assets/Images/camila.jpg" class="figure-img img-fluid rounded" 
+                    alt="A generic square placeholder image with rounded corners in a figure." id="img-footer">
+              <h4 id="song-name">Havana<div id="sub-heading">by Camila Cabello</div></h4>
+            </div>
+            <div class="col-7">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-random" id="player-icons"></i>
+                <i class="fas fa-step-backward" id="player-icons"></i>
+                <i class="fas fa-play white" id="player-play"></i>
+                <i class="fas fa-pause white" id="player-pause"></i>
+                <i class="fas fa-step-forward" id="player-icons"></i>
+                <i class="fas fa-sync" id="player-icons"></i>
+              </div>
+              <div class="d-flex justify-content-center">
+                <h5 class="white" id="start-time">0:00</h5>
+                <div id="player-scroll">
+                  <div id="seek"></div>
+                  <div id="scroll-so-far" draggable="true"></div>
+                </div>
+                <h5 class="white" id="end-time">0:00</h5>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-stream" id="player-icons"></i>
+                <div id="outer-vol-div">
+                  <i class="fas fa-volume-up" id="player-icons"></i>
+                  <i class="fas fa-volume-mute" id="player-icons"></i>
+                  <div class="volume-scroll" id="outer-volume-seek">
+                    <div id="volume-seek"></div>
+                    <div class="volume-scroll-so-far"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="../js/songs.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  
+</body>
+</html>

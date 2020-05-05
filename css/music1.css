@@ -1,0 +1,324 @@
+/*------------------------HTML tags-------------------------------------- */
+body {
+    height:1000px;
+    background-color: rgb(8, 8, 65);
+}
+
+/*--------------------Navigation bar-------------------------------------*/
+
+#navi{
+    background-image: linear-gradient(to top right,black,grey);
+    background-repeat: no-repeat;
+}
+
+.navbar-brand{
+    font-size:25px;
+}
+
+.nav-link:hover{
+    color:grey !important;
+}
+
+.navbar-brand:hover{
+    transform:scale(1.1);
+}
+
+#music-icon{
+    color:rgb(247, 19, 19);
+    font-size:30px;
+}
+
+#search-input{
+    background-color: transparent;
+    border: 0px solid;
+}
+
+#search-input:focus{
+    outline:none;
+}
+
+#microphone{
+    font-size:18px;
+}
+
+#user{
+    height:40px;
+    border-radius:50%;
+    margin-left:10px;
+    box-shadow:0px 0px 6px 4px grey;
+}
+
+#user:hover{
+    transform:scale(1.2);
+}
+
+/*----------------------------------Center div------------------------------------ */
+#main-container{
+    margin-bottom:100px;
+}
+
+#center-row, #latest-release-row, #latest-playlist-row{
+    margin-top:10px;
+    position:relative;
+}
+
+#latest-playlist-column{
+    margin-top:20px;
+}
+
+.col-4{
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:60%;
+    width:70%;
+    opacity: 1;
+    transition: .3s ease;
+}
+
+#row-header{
+    color:white;
+    margin-left:10px;
+}
+
+.col-3{
+    cursor:pointer;
+    margin-bottom:20px;
+}
+
+#center-row .col-4:hover,.popular-artist:hover,.playable-songs:hover,.queue-image:hover{
+    opacity:0.5;
+    transform:scale(1.05);
+}
+
+.playable-songs{
+    height:200px;
+    width:200px;
+}
+
+#more{
+    color:rgb(10, 226, 10);
+    margin-right:10px;
+}
+
+#more:hover{
+    text-decoration: none;
+    color:green;
+}
+  
+.play,.pause{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:white;
+    display:none;
+    /* display:block; */
+}
+
+.play:hover,.pause:hover{
+    color:white;
+}
+
+/*-------------------------------------Aside----------------------------------------*/
+
+.aside{
+    padding:5px;
+}
+
+#numbers{
+    margin-top:15px;
+    margin-right:15px;
+}
+
+.queue-image{
+    height:70px;
+    width:80px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+.col-11{
+    cursor:pointer;
+}
+
+
+#sub-heading-queue{
+    margin-top:5px;
+    font-size:12px;
+    color:grey;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+
+.outer-div{
+    position:relative;
+}
+
+.queue{
+    font-size:20px;
+    color:white;
+}
+
+.heart1{
+    color:white;
+    margin-top:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.heart2{
+    color:rgba(255, 0, 0, 0.801);
+    margin-top:20px;
+    font-size:25px;
+    display:none;
+    cursor:pointer;
+}
+
+/*-----------------------------------Bottom Player---------------------------------- */
+
+.bottom{
+    height:90px;
+}
+
+#song-name{
+    margin-top:-5px;
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+    font-family: Lucida Calligraphy;
+}
+
+#sub-heading{
+    margin-top:5px;
+    font-size:0.8rem;
+}
+
+#navbar-row{
+    height:100%;
+    width:100%;
+}
+
+.col-10{
+    height:100%;
+    width:100%;
+}
+
+#img-footer{
+    height:70px;
+    width:70px;
+    margin-right:10px;
+    margin-top:-5px;
+    margin-left:5px;
+}
+
+#player-icons{
+    font-size:1.3rem;
+    color:rgb(202, 188, 188);
+    margin-right:50px;
+    margin-top:5px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+#player-icons:hover{
+    color:#c3170a;
+}
+
+#player-pause,#player-play{
+    font-size:1.1rem;
+    margin-right:50px;
+    margin-top:-5px;
+    border-radius: 50%;
+    padding:12px;
+    border:2px solid grey;
+    background-color:red;
+    cursor:pointer;
+}
+
+.fa-pause{
+    display:none;
+}
+
+#player-scroll,.volume-scroll{
+    margin-top:10px;
+    height:10px;
+    width:100%;
+    background-color:black;
+    border-radius:5px;
+    display:flex;
+    justify-content: flex-start;
+    cursor:pointer;
+}
+
+.fa-volume-mute{
+    display:none;
+}
+
+.volume-scroll{
+    width:120%;
+}
+
+#seek{
+    height:inherit;
+    width:1%;
+    border-radius:5px;
+    background-color: green;
+}
+
+#scroll-so-far{
+    display:inline-block;
+    margin-top:-5px;
+    margin-left:-10px;
+    height:200%;
+    width:2.5%;    
+    border-radius:50%;
+    background-color:white;
+}
+
+#start-time{
+    margin:3px;
+}
+
+#end-time{
+    margin:3px;
+}
+
+.volume-scroll{
+    display:none;
+}
+
+.volume-scroll-so-far{
+     margin-top:-3px;
+     margin-left:-5px;
+     height:150%;
+     width:18%;
+     border-radius: 50%;
+     background-color:white;
+}
+
+#volume-seek{
+    height:inherit;
+    width:100%;
+    border-radius:5px;
+    background-color: lightseagreen;
+}
+
+#outer-vol-div:hover .volume-scroll{
+    display:flex;
+}
+
+/*------------------------------------------General Classes---------------------------------*/
+.white{
+    color:white
+}
+
+.grey{
+    color:grey;
+}
